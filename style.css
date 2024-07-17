@@ -1,0 +1,103 @@
+.container1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url(./image/bright-squares.png);
+}
+
+.gameName{
+    height: 350px;
+    background-color: #07003d;
+    background-image: url(./image/bright-squares.png);
+    padding-top: 45px;
+    margin-bottom: 40px;
+}
+
+h1{
+    font-family: "Bungee Spice", sans-serif;
+}
+
+.info{
+    margin: 50px 0;
+}
+
+p{
+    font-family: 'Crimson Text';
+    font-size: 22px;
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.start-button {
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.5);
+}
+
+.start-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 71, 87, 0.8);
+}
+
+.start-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+
+.colorBtn{
+    width: 200px;
+    height: 200px;
+    left: 372px;
+    top: 429px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.colorBtn:active{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(29, 28, 28, 0.8);
+}
+
+.play{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(29, 28, 28, 0.8);
+}
+
+#red{
+    background: #CC6161;
+}
+
+#orange{
+    background: #D9A961;
+}
+
+#green{
+    background: #97D468;
+}
+
+#blue{
+    background: #3DAED2;
+}
+
+#purple{
+    background: #AB75D5;
+}
+
+#yellow{
+    background: #DADD4C;
+}
+
