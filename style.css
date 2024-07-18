@@ -65,6 +65,7 @@ p{
     top: 429px;
     border-radius: 20px;
     margin: 20px;
+    border: 5px black solid;
 }
 
 .colorBtn:active{
@@ -72,9 +73,19 @@ p{
     box-shadow: 0 0 25px rgba(29, 28, 28, 0.8);
 }
 
-.play{
+.pressed{
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(29, 28, 28, 0.8);
+}
+
+#level{
+    font-family:"Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: #FEF2BF;
+    margin: 60px;
+    text-shadow: 5px 0 #232931;
 }
 
 #red{
