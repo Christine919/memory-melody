@@ -67,17 +67,17 @@
 
 $(document).ready(function() {
     $("#start-btn").click(playGame);
+    $("#play-again-btn").click(startOver);
 
     var buttonColors = ["red", "blue", "yellow", "green", "purple", "orange"];
-
     var gamePattern = [];
     var userClickedPattern = [];
     let level = 0;
 
     function playGame() {
         // Hide the instruction and start button
-        $(".info").css("visibility", "hidden");
-
+        $(".info").hide();
+        $("#game-over").hide();
         // Show the level display
         updateLevelDisplay(level);
         nextSequence();
@@ -131,21 +131,29 @@ $(document).ready(function() {
                 }, 1000);
             }
         } else {
-            playSound("wrong");
-            $("body").addClass("game-over");
-
-            setTimeout(function() {
-                $("body").removeClass("game-over");
-            }, 200);
-
-            $("#level").text("Game Over, Press Start to Restart");
-
-            startOver();
+            gameOver();
         }
+    }
+
+    function gameOver() {
+        playSound("wrong");
+        $("body").addClass("game-over-warning");
+
+        setTimeout(function() {
+            $("body").removeClass("game-over-warning");
+        }, 200);
+
+        $("#level").hide();
+        $("#final-level").text("You reached level " + level);
+        $("#game-over").show();
     }
 
     function startOver() {
         level = 0;
         gamePattern = [];
+        userClickedPattern = [];
+        $(".info").show();
+        $("#game-over").hide();
+        playGame();
     }
 });
