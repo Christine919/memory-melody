@@ -33,7 +33,7 @@
 .gameName {
     height: 350px;
     background: linear-gradient(135deg, #1d2b64, #6f6f6f); /* Dark gradient with a hint of neon */
-    padding-top: 45px;
+    padding-top: 25px;
     margin-bottom: 40px;
     border-radius: 15px; /* Rounded corners for a softer look */
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon blue glow around the section */
@@ -47,11 +47,11 @@ h1{
 }
 
 .info{
-    margin: 50px 0;
+    margin: 25px 0 50px 0;
 }
 
-info p{
-    font-family: 'Crimson Text';
+.info p{
+    /* font-family: 'Crimson Text'; */
     font-size: 22px;
     color: #ffffff;
     padding-bottom: 15px;
