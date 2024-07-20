@@ -60,7 +60,7 @@ info p{
 .container2{
     display: flex;
     justify-content: center;
-    padding-bottom: 80px;
+    padding: 70px 0;
 }
 
 /* .start-button {
@@ -230,7 +230,7 @@ h2{
 
 /* Neon Footer Styling */
 .neon-footer {
-    background-color: #0a0238;
+    background-color: #312765;
     color: #ffffff;
     font-family: 'Press Start 2P', system-ui;
     font-size: 10px;
@@ -239,7 +239,7 @@ h2{
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 0 15px #92bdf6, 0 0 30px #92bdf6 inset;
+    box-shadow: 0 0 20px #92bdf6, 0 0 20px #92bdf6 inset;
     border-top: 2px solid #92bdf6;
     display: flex;
     justify-content: space-between; /* Distributes space between items */
@@ -298,11 +298,11 @@ h2{
     }
 
     .info p {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .neon-footer {
-        font-size: 5px;
+        font-size: 3px;
         padding: 8px;
     }
 
