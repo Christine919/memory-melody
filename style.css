@@ -4,6 +4,8 @@
     text-align: center;
     background-color: #ffffff;
     background-image: url(./image/bright-squares.png);
+    height: 100vh;
+    overflow: hidden;
 }
 
 .gameName{
@@ -170,7 +172,17 @@ h2{
         font-size: 12px;
     }
 
+    .container1 {
+        height: 80vh; /* Adjust height for very small devices like phones */
+    }
+
     /* .container2 {
         padding: 10px 50px;
     } */
+}
+
+@media (max-width: 768px) {
+    .container1 {
+        height: 90vh; /* Adjust height for tablets and smaller devices */
+    }
 }
