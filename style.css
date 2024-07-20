@@ -183,7 +183,7 @@ h2{
     opacity: 0.8;
   }
 
-  .game-over {
+.game-over {
     background: rgba(17, 13, 36, 0.8); /* Semi-transparent red background */
     padding: 20px;
     border-radius: 15px;
@@ -261,12 +261,12 @@ h2{
 
 @media (max-width: 480px) {
     .container2 {
-        padding: 30px;
+        padding: 20px;
     }
 
     .gameName{
         height: 280px;
-        padding-top: 30px;
+        padding-top: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -278,7 +278,7 @@ h2{
 
     h1 {
         font-size: 2rem;
-        margin-top: 30px;
+        margin-top: 25px;
     }
 
     #level {
@@ -304,7 +304,8 @@ h2{
     }
 
     .info p {
-        font-size: 12px;
+        font-size: 11px;
+        padding: 0 10px 15px 10px;
     }
 
     .neon-footer {
@@ -315,6 +316,15 @@ h2{
     #logo{
         width:15px ;
         height: 15px;
+    }
+
+    .game-over h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    #final-level {
+        margin-bottom: 15px;
     }
 }
 
