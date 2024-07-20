@@ -17,7 +17,13 @@
 }
 
 h1{
-    font-family: "Bungee Spice", sans-serif;
+    font-family: 'Fredoka One', cursive;
+    font-size: 3rem; /* Adjust size as needed */
+    color: #FF5733; /* A bold color to match the playful style */
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Adds some depth */
+    margin: 20px 0; /* Adjust margin for spacing */
+    /* font-family: "Bungee Spice", sans-serif; */
     font-display: swap;
 }
 
@@ -169,20 +175,6 @@ h2{
     }
 
     .info p {
-        font-size: 12px;
-    }
-
-    .container1 {
-        height: 80vh; /* Adjust height for very small devices like phones */
-    }
-
-    /* .container2 {
-        padding: 10px 50px;
-    } */
-}
-
-@media (max-width: 768px) {
-    .container1 {
-        height: 90vh; /* Adjust height for tablets and smaller devices */
+        font-size: 14px;
     }
 }
