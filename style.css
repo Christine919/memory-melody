@@ -17,14 +17,7 @@
 }
 
 h1{
-    font-family: 'Fredoka One', cursive;
-    font-size: 3rem; /* Adjust size as needed */
-    color: #FF5733; /* A bold color to match the playful style */
-    font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Adds some depth */
-    margin: 20px 0; /* Adjust margin for spacing */
-    /* font-family: "Bungee Spice", sans-serif; */
-    font-display: swap;
+    font-family: "Bungee Spice", "Comic Sans MS", cursive, sans-serif;
 }
 
 .info{
