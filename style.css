@@ -40,7 +40,7 @@
 }
 
 h1{
-    font-family: "Bungee Spice", "Comic Sans MS", cursive, sans-serif;
+    font-family: "Bungee Spice", "Comic Sans MS", "Chalkboard", "Marker Felt", cursive, sans-serif;
     font-size: 3rem; /* Adjust font size as needed */
     color: #0ff; /* Neon Cyan */
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glowing text effect */
@@ -60,7 +60,7 @@ info p{
 .container2{
     display: flex;
     justify-content: center;
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 /* .start-button {
@@ -260,10 +260,14 @@ h2{
 }
 
 @media (max-width: 480px) {
+    .container2 {
+        padding: 30px;
+    }
+
     .gameName{
         height: 280px;
         padding-top: 30px;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-bottom: 20px;
     }
 
