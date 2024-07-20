@@ -5,9 +5,11 @@ $(document).ready(function() {
     var buttonColors = ["red", "blue", "yellow", "green", "purple", "orange"];
     var gamePattern = [];
     var userClickedPattern = [];
+    var gameStarted = false; // Track if the game has started
     let level = 0;
 
     function playGame() {
+        gameStarted = true; // Set gameStarted to true when the game starts
         // Hide the instruction and start button
         $(".info").hide();
         $("#game-over").hide();
@@ -17,6 +19,8 @@ $(document).ready(function() {
     }
 
     $(".colorBtn").click(function() {
+        if (!gameStarted) return; // Prevent clicks if the game hasn't started
+
         var userChosenColor = $(this).attr("id");
         userClickedPattern.push(userChosenColor);
 
@@ -79,12 +83,14 @@ $(document).ready(function() {
         $("#level").hide();
         $("#final-level").text("You reached level " + level);
         $("#game-over").show();
+        gameStarted = false; // Reset gameStarted when the game is over
     }
 
     function startOver() {
         level = 0;
         gamePattern = [];
         userClickedPattern = [];
+        gameStarted = false; // Reset gameStarted before starting over
         $(".info").show();
         $("#game-over").hide();
         playGame();
