@@ -2,10 +2,6 @@
 
 Memory Melody is a web-based memory game where players challenge their ability to remember and repeat musical patterns.
 
-## Demo
-
-Include screenshots, gifs, or a link to a live demo of your game.
-
 ## Built With
 
 - HTML5
@@ -39,14 +35,6 @@ Future features include:
 - Sound effects for feedback.
 - Multiplayer mode.
 
-## Contributing
-
-Contributions are welcome! Please read the [Contributing Guidelines](CONTRIBUTING.md) first.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
 ## Acknowledgements
 
 - Simon game concept inspired by [original Simon game](https://en.wikipedia.org/wiki/Simon_(game)).
@@ -54,4 +42,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-For questions or feedback, please contact [Your Name](mailto:yourname@example.com).
+For questions or feedback, please contact [Christine Ng](chrisng219@gmail.com).
