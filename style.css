@@ -1,4 +1,4 @@
-.container1{
+/* .container1{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -14,17 +14,43 @@
     background-image: url(./image/bright-squares.png);
     padding-top: 45px;
     margin-bottom: 40px;
+} */
+
+/* Neon Background for Container */
+.container1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e), url('./image/bright-squares.png');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-blend-mode: overlay; /* Blend the gradient and image */
+    background-attachment: fixed; /* Keep the background fixed */
+    color: #fff; /* Ensures text is readable on dark background */
+    padding: 20px; /* Add padding to prevent text from touching edges */
+}
+
+/* Neon Background for Game Name Section */
+.gameName {
+    height: 350px;
+    background: linear-gradient(135deg, #1d2b64, #6f6f6f); /* Dark gradient with a hint of neon */
+    padding-top: 45px;
+    margin-bottom: 40px;
+    border-radius: 15px; /* Rounded corners for a softer look */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6); /* Neon blue glow around the section */
 }
 
 h1{
     font-family: "Bungee Spice", "Comic Sans MS", cursive, sans-serif;
+    font-size: 3rem; /* Adjust font size as needed */
+    color: #0ff; /* Neon Cyan */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Glowing text effect */
 }
 
 .info{
     margin: 50px 0;
 }
 
-p{
+info p{
     font-family: 'Crimson Text';
     font-size: 22px;
     color: #ffffff;
@@ -37,7 +63,7 @@ p{
     padding-bottom: 80px;
 }
 
-.start-button {
+/* .start-button {
     background-color: #ff4757;
     color: white;
     border: none;
@@ -58,9 +84,35 @@ p{
 .start-button:active {
     transform: scale(0.95);
     box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+} */
+
+/* Neon Styling for Start and Play Again Buttons */
+.start-button {
+    background-color: #ff073a; /* Neon Pink */
+    color: #ffffff;
+    border: 2px solid transparent;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Neon Glow Effect */
 }
 
-.colorBtn{
+.start-button:hover {
+    background-color: #FF5E00; /* Neon Orange on hover */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); /* Intense Glow Effect */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.start-button:active {
+    background-color: #FF007F; /* Neon Pink (same as initial) */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Reduced Glow Effect */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* .colorBtn{
     width: 200px;
     height: 200px;
     left: 372px;
@@ -68,11 +120,27 @@ p{
     border-radius: 20px;
     margin: 20px;
     border: 5px black solid;
+} */
+
+.colorBtn {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.5);
+    cursor: pointer;
 }
 
-.colorBtn:active{
+/* .colorBtn:active{
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(29, 28, 28, 0.8);
+} */
+
+.colorBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.5), 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .pressed{
@@ -80,7 +148,7 @@ p{
     box-shadow: 0 0 25px rgba(29, 28, 28, 0.8);
 }
 
-#level{
+/* #level{
     font-family:"Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -88,6 +156,16 @@ p{
     color: #FEF2BF;
     margin: 60px;
     text-shadow: 5px 0 #232931;
+} */
+
+#level {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    color: #FEF2BF; /* Light color for contrast */
+    margin: 60px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9); /* Glowing text effect */
 }
 
 h2{
@@ -105,35 +183,87 @@ h2{
     opacity: 0.8;
   }
 
+  .game-over {
+    background: rgba(17, 13, 36, 0.8); /* Semi-transparent red background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(210, 204, 204, 0.6); /* Neon red glow effect */
+    color: #fff;
+    text-shadow: 0 0 10px rgba(210, 204, 204, 0.6); /* Glowing text effect */
+}
+
 #red{
-    background: #CC6161;
+    /* background: #CC6161; */
+    background:  #FF007F; /* Neon Red */
+    box-shadow: 0 0 10px rgba(255, 7, 58, 0.8), 0 0 20px rgba(255, 7, 58, 0.5);
 }
 
 #orange{
-    background: #D9A961;
+    /* background: #D9A961; */
+    background: #FF5E00; /* Neon Orange */
+    box-shadow: 0 0 10px rgba(255, 103, 0, 0.8), 0 0 20px rgba(255, 103, 0, 0.5);
 }
 
 #green{
-    background: #97D468;
+    /* background: #97D468; */
+    background:#39FF14; /* Neon Green */
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.8), 0 0 20px rgba(57, 255, 20, 0.5);
 }
 
 #blue{
-    background: #3DAED2;
+    /* background: #3DAED2; */
+    background:#00D4FF; /* Neon Blue */
+    box-shadow: 0 0 10px rgba(0, 209, 255, 0.8), 0 0 20px rgba(0, 209, 255, 0.5);
 }
 
 #purple{
-    background: #AB75D5;
+    /* background: #AB75D5; */
+    background: #d500ff; /* Neon Purple */
+    box-shadow: 0 0 10px rgba(213, 0, 255, 0.8), 0 0 20px rgba(213, 0, 255, 0.5);
 }
 
 #yellow{
-    background: #DADD4C;
+    /* background: #DADD4C; */
+    background: #FFFF00; /* Neon Yellow */
+    box-shadow: 0 0 10px rgba(247, 255, 0, 0.8), 0 0 20px rgba(247, 255, 0, 0.5);
+}
+
+/* Neon Footer Styling */
+.neon-footer {
+    background-color: #0a0238;
+    color: #ffffff;
+    font-family: 'Press Start 2P', system-ui;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 0 15px #92bdf6, 0 0 30px #92bdf6 inset;
+    border-top: 2px solid #92bdf6;
+    display: flex;
+    justify-content: space-between; /* Distributes space between items */
+    align-items: center;
+}
+
+.neon-footer p {
+    margin: 0;
+}
+
+.neon-footer img {
+    border-radius: 50%;
+}
+
+#logo{
+    width:35px ;
+    height: 35px;
 }
 
 @media (max-width: 480px) {
     .gameName{
         height: 280px;
-        padding-top: 45px;
-        margin-bottom: 40px;
+        padding-top: 30px;
+        margin-bottom: 20px;
     }
 
     .colorBtn {
@@ -142,7 +272,7 @@ h2{
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     #level {
@@ -170,4 +300,14 @@ h2{
     .info p {
         font-size: 14px;
     }
+    .neon-footer {
+        font-size: 0.875rem;
+        padding: 8px;
+    }
+
+    #logo{
+        width:15px ;
+        height: 15px;
+    }
 }
+
